@@ -12,7 +12,7 @@ const restoSchema = new mongoose.Schema({
     },
     itemsArr: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: Item
+        ref: "Item"
     }]
 });
 
