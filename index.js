@@ -1,12 +1,10 @@
 const express = require("express");
-const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const restoModel = require("./models/restoModel");
 const itemModel = require("./models/itemModel");
-dotenv.config();
 const app = express();
 
-const Port = process.env.PORT;
+const Port = 8080;
 
 app.use(express.json());
 
